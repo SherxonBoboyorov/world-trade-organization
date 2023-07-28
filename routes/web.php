@@ -9,6 +9,7 @@ use App\Http\Controllers\Admin\PageController;
 use App\Http\Controllers\Admin\ArticleController;
 use App\Http\Controllers\Admin\OptionsController;
 use App\Http\Controllers\Admin\TeamController as AdminTeamController;
+use App\Http\Controllers\Admin\ActivityCategoryController;
 use UniSharp\Laravel\LaravelFilemanager\Lfm;
 
 
@@ -18,7 +19,6 @@ use App\Http\Controllers\Front\TeamController;
 use App\Http\Controllers\Front\ArticleController as Articles;
 use App\Http\Controllers\Front\ContactController;
 use App\Http\Controllers\Front\EventsController;
-
 
 Auth::routes();
 
@@ -31,7 +31,8 @@ Route::middleware(['role:admin'])->prefix('dashboard')->group(static function ()
         'page' => PageController::class,
         'article' => ArticleController::class,
         'options' => OptionsController::class,
-        'team' => TeamController::class
+        'team' => TeamController::class,
+        'activitycategory' => ActivityCategoryController::class
     ]);
 });
 

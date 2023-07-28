@@ -60,6 +60,36 @@
                     {{-- end  --}}
 
                     {{-- start  --}}
+                       <li class="nav-item">
+                        <a href="{{ route('team.index') }}" class="nav-link">
+                        <i class="nav-icon"></i>
+                        <p>
+                            Teams
+                            <i class="right fas fa-angle-left"></i>
+                        </p>
+                        </a>
+                     </li>
+                    {{-- end  --}}
+                    
+
+
+
+                     {{-- start  --}}
+                     <li class="nav-item">
+                        <a href="{{ route('activitycategory.index') }}" class="nav-link">
+                        <i class="nav-icon"></i>
+                        <p>
+                            Activity Category
+                            <i class="right fas fa-angle-left"></i>
+                        </p>
+                        </a>
+                     </li>
+                    {{-- end  --}}
+
+
+
+
+                    {{-- start  --}}
                      <li class="nav-item">
                         <a href="{{ route('article.index') }}" class="nav-link">
                         <i class="nav-icon"></i>
