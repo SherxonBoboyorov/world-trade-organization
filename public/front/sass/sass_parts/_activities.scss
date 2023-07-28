@@ -1,0 +1,164 @@
+@import "./global";
+
+.activities {
+  width: 100%;
+  margin-top: 50px !important;
+
+  .btns {
+    @include flex(flex-start, center);
+    margin-top: 30px !important;
+    width: 100%;
+    margin-left: 10px !important;
+    flex-wrap: wrap;
+
+    & > a {
+      cursor: pointer;
+      width: fit-content;
+      height: 40px;
+      border: none;
+      margin-right: 15px !important;
+      margin-bottom: 10px !important;
+      padding: 10px 15px !important;
+      @include font(18px, 600);
+      background: #fff;
+      box-shadow: 0px 2px 14px 0px rgba(0, 0, 0, 0.1);
+      border-radius: 3px;
+      @include font(18px, 600);
+      color: $colorBlue;
+
+      &:hover {
+        color: $colorDanger;
+      }
+    }
+  }
+
+  .row {
+    @include flex(flex-start !important, center);
+    margin-top: 20px !important;
+    width: 100%;
+    flex-wrap: wrap !important;
+
+    .col {
+      width: 33%;
+      position: relative;
+      padding: 10px !important;
+
+      & > a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+
+        img {
+          height: 250px;
+          width: 100%;
+        }
+
+        .text-content {
+          width: 100%;
+          height: fit-content;
+          margin-top: 18px !important;
+
+          .date-content {
+            @include flex(space-between, center);
+            width: fit-content;
+            @include font(14px, 500);
+            margin-bottom: 15px !important;
+
+            .type {
+              font-weight: 600;
+              margin-right: 20px !important;
+              color: $colorDanger;
+            }
+
+            .date {
+              color: $colorDark;
+            }
+          }
+
+          .title {
+            color: #123654;
+            @include font(18px, 700);
+          }
+
+          .description {
+            margin: 8px 0 !important;
+            color: $colorDark;
+            @include font(16px, 400);
+            line-height: 22px !important;
+            max-height: 40px !important;
+          }
+        }
+      }
+    }
+  }
+
+  .title-block {
+    margin-left: 10px !important;
+  }
+}
+
+@media (max-width: 820px) {
+  .activities {
+    padding: 0 20px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .activities .row .col {
+    width: 50%;
+    img {
+      height: 220px !important;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .activities {
+    .btns {
+      a {
+        font-size: 14px !important;
+        padding: 12px 15px !important;
+      }
+    }
+
+    .row .col {
+      img {
+        height: 200px !important;
+      }
+
+      .text-content {
+        margin-top: 10px !important;
+
+        .date-content {
+          margin-top: -10px !important;
+          font-size: 12px !important;
+          margin-bottom: 15px !important;
+
+          .type {
+            margin-right: 0px !important;
+          }
+        }
+
+        .title {
+          @include font(15px, 600);
+          margin-top: -5px !important;
+        }
+
+        .description {
+          font-size: 11px !important;
+          line-height: 0px !important;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .activities {
+    
+    .row .col {
+      width: 100% !important;
+    }
+  }
+}

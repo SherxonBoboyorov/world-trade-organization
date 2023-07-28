@@ -32,18 +32,18 @@
                         <div>
                         <thead>
                         <tr>
-                            <th>Content [Uzbek]</th>
-                            <th>Content [Russian]</th>
-                            <th>Content [English]</th>
+                            <th>Title [Uzbek]</th>
+                            <th>Title [Russian]</th>
+                            <th>Title [English]</th>
                             <th colspan="2" style="width: 2%;">Actions</th>
                         </tr>
                         </thead>
                         <tbody>
                         @foreach ($pages as $page)
                             <tr>
-                                <td class="table_cart_list">{!! $page->content_uz !!}</td>
-                                <td class="table_cart_list">{!! $page->content_ru !!}</td>
-                                <td class="table_cart_list">{!! $page->content_en !!}</td>
+                                <td>{{ $page->title_uz }}</td>
+                                <td>{{ $page->title_ru }}</td>
+                                <td>{{ $page->title_en }}</td>
                                 <td>
                                     <a href="{{ route('page.edit', $page->id) }}" class="btn btn-primary btn-icon">
                                         <i class="fa fa-edit">Edit</i>
@@ -61,22 +61,6 @@
         </div>
     </div>
 
-    <style>
-        .table_cart_list p {
-            max-height: 72px;
-            -webkit-line-clamp: 3;
-            position: relative;
-            display: -webkit-box;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: normal;
-            color: #000;
-        }
-
-        .table_cart_list img{
-           display: none;
-        }
-    </style>
+  
 
 @endsection

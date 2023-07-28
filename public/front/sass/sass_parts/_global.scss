@@ -1,0 +1,73 @@
+// VARIABLES
+$colorDanger: #880019;
+$colorBlue: #123654;
+$colorDark: #191919;
+$fontGothamPro: "Gotham Pro";
+
+@font-face {
+  font-family: $fontGothamPro;
+  src: url("./../../shrifts/gothampro.ttf");
+}
+
+//  MIXINS
+@mixin flex($jc, $ai) {
+  display: flex;
+  justify-content: $jc;
+  align-items: $ai;
+}
+
+@mixin font($fs, $fw) {
+  font-size: $fs;
+  font-weight: $fw;
+}
+
+.container-fluid {
+  min-height: 100vh !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+*,
+body {
+  text-decoration: none !important;
+  list-style-type: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box !important;
+  font-family: $fontGothamPro;
+}
+
+.title-block {
+  width: fit-content;
+
+  .title {
+    @include font(26px, 600);
+    color: $colorBlue;
+  }
+
+  hr {
+    margin: 10px 0 !important;
+    width: 50%;
+    height: 3px;
+    background-color: $colorDanger;
+    border: $colorDanger;
+  }
+}
+
+hr {
+  background-color: #b3ccda;
+  border-color: #b3ccda;
+  height: 1px;
+}
+
+.main {
+  margin-top: 70px !important;
+}
+
+.container {
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto !important;
+}
+
+

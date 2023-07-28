@@ -4,7 +4,7 @@ namespace App\Http\Requests\Admin;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class CreatePage extends FormRequest
+class CreateTeam extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -31,6 +31,12 @@ class CreatePage extends FormRequest
             'content_ru' => 'required',
             'content_en' => 'required',
             'content_uz' => 'required',
+            'biography_ru' => 'required',
+            'biography_en' => 'required',
+            'biography_uz' => 'required',
+            'publication_ru' => 'required',
+            'publication_en' => 'required',
+            'publication_uz' => 'required',
         ];
     }
 }

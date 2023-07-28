@@ -7,6 +7,7 @@ use App\Http\Requests\Admin\CreatePage;
 use App\Http\Requests\Admin\UpdatePage;
 use App\Models\Page;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\File;
 
 class PageController extends Controller
 {
@@ -40,6 +41,8 @@ class PageController extends Controller
     public function store(CreatePage $request)
     {
         $data = $request->all();
+
+        $data['image'] = Page::uploadImage($request);
 
         if (Page::create($data)) {
             return redirect()->route('page.index')->with('message', 'Created successfully');
@@ -82,6 +85,8 @@ class PageController extends Controller
         $page = Page::find($id);
 
         $data = $request->all();
+        $data['image'] = Page::updateImage($request, $page);
+
 
         if ($page->update($data)) {
             return redirect()->route('page.index')->with('message', 'changed successfully!!!');

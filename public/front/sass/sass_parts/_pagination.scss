@@ -1,0 +1,36 @@
+@import "./global";
+
+.center {
+  text-align: center;
+  margin-bottom: 50px !important;
+  
+  .pagination {
+    display: inline-block;
+
+    a {
+      color: $colorDark;
+      float: left;
+      padding: 8px 16px !important;
+      text-decoration: none;
+      transition: all 0.2s linear;
+      margin: 0 4px !important;
+      font-size: 20px;
+      border: 2px solid rgba(0, 0, 0, 0);
+      
+      &:hover {
+        border-color: $colorDanger;
+        color: $colorDanger;
+      }
+
+      &.prev:hover,
+      &.next:hover {
+        border-color: rgba(0, 0, 0, 0);
+      }
+
+      &.active {
+        border-color: $colorDanger;
+        color: $colorDanger;
+      }
+    }
+  }
+}

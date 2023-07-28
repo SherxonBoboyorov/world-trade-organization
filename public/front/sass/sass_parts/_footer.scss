@@ -1,0 +1,146 @@
+@import "./global";
+
+.footer {
+  width: 100%;
+  background-color: $colorBlue;
+  @include flex(center, center);
+  margin-top: auto !important;
+  padding: 0 !important;
+
+  .footer-content {
+    max-width: 1040px;
+    width: 100%;
+    height: 100%;
+    margin-top: 30px !important;
+    margin-bottom: 30px !important;
+    padding: 0 15px !important;
+
+    .row {
+      margin-top: -10px !important;
+      width: 100%;
+      height: 100%;
+      @include flex(space-between, center);
+      flex-wrap: wrap;
+
+      .col {
+        &.col-1 {
+          width: 60%;
+          @include flex(space-between, flex-start);
+        }
+
+        &.col-2 {
+          width: 40%;
+          @include flex(flex-end, flex-start);
+
+          p {
+            text-align: end;
+          }
+
+          .link-logos {
+            margin-right: 0 !important;
+            margin-left: auto !important;
+            width: 150px;
+            @include flex(space-between, center);
+
+            .sm-logo {
+              width: 35px;
+              height: 35px;
+              border-radius: 50%;
+              transition: all 0.4s linear;
+              background-color: rgba(192, 192, 192, 0.4156862745);
+              @include flex(center, center);
+              cursor: pointer;
+
+              i {
+                font-size: 17px !important;
+                color: white;
+              }
+
+              &:hover {
+                background-color: white;
+                i {
+                  color: $colorDanger;
+                }
+              }
+            }
+          }
+        }
+
+        & > div {
+          width: fit-content;
+          margin-top: 10px;
+          margin-bottom: 10px;
+
+          p {
+            &.think a {
+              font-weight: 400 !important;
+              font-size: 10px;
+
+              span {
+                font-size: 12px;
+                margin: 0 5px !important;
+              }
+            }
+
+            a {
+              color: #98b8d3;
+              font-family: "Gotham Pro";
+              font-size: 12px;
+              font-weight: 500;
+              line-height: 38px;
+              transition: all 0.2s linear;
+
+              &:hover {
+                color: white;
+              }
+
+              span {
+                color: white;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .footer .row .col {
+    width: 100% !important;
+
+    &.col-2 {
+      justify-content: flex-start !important;
+
+      div {
+        width: 100%;
+
+        p {
+          text-align: start !important;
+        }
+
+        .link-logos {
+          width: 100% !important;
+          justify-content: flex-start !important;
+
+          a {
+            margin-right: 15px !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .footer .row .col-1 {
+    @include flex(flex-start, flex-start);
+    flex-wrap: wrap;
+    div {
+      width: 50% !important;
+      &:nth-child(3) {
+        width: 100% !important;
+      }
+    }
+  }
+}

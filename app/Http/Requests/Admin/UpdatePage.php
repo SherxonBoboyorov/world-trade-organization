@@ -24,6 +24,9 @@ class UpdatePage extends FormRequest
     public function rules(): array
     {
         return [
+            'title_ru' => 'required|string|max:255',
+            'title_uz' => 'required|string|max:255',
+            'title_en' => 'required|string|max:255',
             'content_ru' => 'required',
             'content_en' => 'required',
             'content_uz' => 'required',
