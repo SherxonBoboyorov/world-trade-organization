@@ -10,6 +10,7 @@ use App\Http\Controllers\Admin\ArticleController;
 use App\Http\Controllers\Admin\OptionsController;
 use App\Http\Controllers\Admin\TeamController as AdminTeamController;
 use App\Http\Controllers\Admin\ActivityCategoryController;
+use App\Http\Controllers\Admin\ActivityController;
 use UniSharp\Laravel\LaravelFilemanager\Lfm;
 
 
@@ -32,7 +33,8 @@ Route::middleware(['role:admin'])->prefix('dashboard')->group(static function ()
         'article' => ArticleController::class,
         'options' => OptionsController::class,
         'team' => TeamController::class,
-        'activitycategory' => ActivityCategoryController::class
+        'activitycategory' => ActivityCategoryController::class,
+        'activity' => ActivityController::class
     ]);
 });
 

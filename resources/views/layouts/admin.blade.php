@@ -86,6 +86,20 @@
                      </li>
                     {{-- end  --}}
 
+                      {{-- start  --}}
+                      <li class="nav-item">
+                        <a href="{{ route('activity.index') }}" class="nav-link">
+                        <i class="nav-icon"></i>
+                        <p>
+                            Activity
+                            <i class="right fas fa-angle-left"></i>
+                        </p>
+                        </a>
+                     </li>
+                    {{-- end  --}}
+
+
+                    
 
 
 
