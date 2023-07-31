@@ -18,10 +18,10 @@
           <div class="row">
             @foreach($events as $event)
             <div class="col">
-              <a href="{{ route('event', $event->id) }}">
+              <a href="{{ route('event', $event->{'slug_' . app()->getLocale()}) }}">
                 <div class="text-content">
                   <div class="date-content">
-                    <div class="date">{{ $event->date_mask->format('F d,Y') }}</div>
+                    <div class="date">{{ $event->created_at->format('F d, Y') }}</div>
                   </div>
                   <p class="title">{{ $event->{'title_' . app()->getLocale()} }}</p>
                   <h6 class="description">

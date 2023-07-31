@@ -3,8 +3,8 @@
 namespace App\Http\Controllers\Front;
 
 use App\Http\Controllers\Controller;
-use App\Models\Admin\Activity;
-use App\Models\Admin\ActivityCategory;
+use App\Models\Activity;
+use App\Models\ActivityCategory;
 use Illuminate\Http\Request;
 
 class ActivitiesController extends Controller
@@ -22,9 +22,13 @@ class ActivitiesController extends Controller
     }
 
 
-    public function show($id)
+    public function show($slug)
     {
-        $activitiy = Activity::find($id);
+        $activitiy = Activity::where('slug_uz', $slug)
+        ->orWhere('slug_ru', $slug)
+        ->orWhere('slug_en', $slug)
+        ->first();
+        
 
         return view('front.activities.show', compact(
             'activitiy',

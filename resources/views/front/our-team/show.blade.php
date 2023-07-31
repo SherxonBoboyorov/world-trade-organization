@@ -19,7 +19,7 @@
         <div class="member">
           <div class="row row-1">
             <div class="col col-1">
-              <img src="{{ asset($team->image_url) }}" alt="" />
+              <img src="{{ asset($team->image) }}" alt="" />
             </div>
             <div class="col col-2">
               <p class="title">{{ $team->{'title_' . app()->getLocale()} }}</p>

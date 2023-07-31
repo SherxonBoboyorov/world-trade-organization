@@ -3,16 +3,16 @@
 namespace App\Http\Controllers\Front;
 
 use App\Http\Controllers\Controller;
-use App\Models\Admin\About;
+use App\Models\Page;
 use Illuminate\Http\Request;
 
-class PageController extends Controller
+class AboutController extends Controller
 {
-    public function about() 
+    public function about()
     {
-        $pages = About::all();
+        $pages = Page::all();
         {
             return view('front.about', compact('pages'));
         }
-    }
+    } 
 }

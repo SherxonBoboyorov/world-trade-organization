@@ -39,7 +39,7 @@
                 <p class="title">{{ $page->{'title_' . app()->getLocale()} }}</p>
                 <hr />
               </div>
-              <p class="text">
+              <p class="text" id="home-wwd-paragraph">
                 {!! $page->{'content_' . app()->getLocale()} !!}
               </p>
               
@@ -136,7 +136,7 @@
             @foreach($articles as $article)
               
             <div class="col">
-              <a href="{{ route('article', $article->id) }}">
+              <a href="{{ route('article', $article->{'slug_' . app()->getLocale()}) }}">
                 <img src="{{ asset($article->image) }}" alt="" />
                 <div class="text-content">
                   <div class="date-content">

@@ -21,7 +21,7 @@
             @foreach($teams as $team)
             <div class="col">
               <a href="{{ route('our-team', $team->id) }}">
-                <img src="{{ asset($team->image_url) }}" alt="" />
+                <img src="{{ asset($team->image) }}" alt="" />
                 <hr />
                 <div class="text-content">
                   <p class="title">{{ $team->{'title_' . app()->getLocale()} }}</p>

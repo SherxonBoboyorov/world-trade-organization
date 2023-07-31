@@ -20,16 +20,16 @@
         <div class="row">
           @foreach($articles as $article)
           <div class="col">
-            <a href="{{ route('article', $article->id) }}">
-              <img src="{{ asset($article->image_url) }}" alt="" />
+            <a href="{{ route('article', $article->{'slug_' . app()->getLocale()}) }}">
+              <img src="{{ asset($article->image) }}" alt="" />
               <div class="text-content">
                 <div class="date-content">
-                  <div class="date">{{ $article->date_mask->format('F d,Y') }}</div>
+                  <div class="date">{{ $article->created_at->format('F d, Y') }}</div>
                 </div>
                 <p class="title">{{ $article->{'title_' . app()->getLocale()} }}</p>
-                <p class="description">
-                  {!! $article->{'sub_content_' . app()->getLocale()} !!}
-                </p>
+                <h6 class="description">
+                  {!! $article->{'content_' . app()->getLocale()} !!}
+                </h6>
               </div>
             </a>
           </div>

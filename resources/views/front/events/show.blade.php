@@ -19,17 +19,17 @@
         <div class="events-post">
           <div class="video-section">
             <div class="video-box">
-              <img src="{{ asset($event->image_url) }}" alt="" />
+              <img src="{{ asset($event->image) }}" alt="" />
               <div class="play video-play"><i class="fa-solid fa-play"></i></div>
               <video controls frameborder="0" >
-                <source src="{{ asset($event->video_url) }}" type="video/mp4">
+                <a href="{{ $event->frame }}" type="video/mp4"></a>
               </video>
               <div class="close close-video"><i class="fa-solid fa-xmark"></i></div>
             </div>
           </div>
 
           <div class="head-section">
-            <div class="text-content">{{ $event->date_mask->format('F d,Y') }}</div>
+            <div class="text-content">{{ $event->created_at->format('F d, Y') }}</div>
             <div class="link-logos">
               <div class="share">@lang('front.share')</div>
                 <a href="https://www.instagram.com/sharer/sharer.php?u={!! request()->url() !!}" class="sm-logos">

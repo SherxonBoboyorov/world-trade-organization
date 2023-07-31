@@ -44,3 +44,7 @@ videoPlay?.addEventListener("click", () => {
     videoBoxVideo.play();
   }, 1000);
 });
+
+const p = document.querySelector("#home-wwd-paragraph");
+for (let i = 0; i < p.children.length; i++)
+  if (p.children[i].localName == "img") console.log(p.children[i].remove());

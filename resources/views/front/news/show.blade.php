@@ -19,12 +19,12 @@
         <div class="news-post">
           <div class="row">
             <p class="title">{{ $article->{'title_' . app()->getLocale()} }}</p>
-            <p class="text">
+            {{-- <p class="text">
                 {!! $article->{'sub_content_' . app()->getLocale()} !!}
-            </p>
+            </p> --}}
 
             <div class="img-content big-img"style="width: 100%; height: 400px; margin: 30px 0 !important">
-              <img src="{{ asset($article->image_url) }}"  alt="" style="width: 100%; height: 100%"/>
+              <img src="{{ asset($article->image) }}"  alt="" style="width: 100%; height: 100%"/>
             </div>
 
             <p class="text">
@@ -37,7 +37,7 @@
           <div class="head-section">
             <div class="text-content">
               <p>@lang('front.date')</p>
-              <p>{{ $article->date_mask->format('F d,Y') }}</p>
+              <p>{{ $article->created_at->format('F d, Y') }}</p>
             </div>
             <hr />
             <div class="link-logos">

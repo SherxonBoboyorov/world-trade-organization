@@ -28,18 +28,16 @@
                                   <option value="address_uz">Address Uz</option>
                                   <option value="address_ru">Address Ru</option>
                                   <option value="address_en">Address En</option>
+                                  <option value="lanrdmarks_uz">Lanrdmarks UZ</option>
+                                  <option value="lanrdmarks_ru">Lanrdmarks RU</option>
+                                  <option value="lanrdmarks_en">Lanrdmarks EN</option>
                                   <option value="phone">Phone</option>
+                                  <option value="fax">Fax</option>
                                   <option value="email">E-mail</option>
                                   <option value="map">Google or Yandex MAP</option>
                                   <option value="instagram">Instagram</option>
                                   <option value="facebook">Facebook</option>
-                                  <option value="telegram">Telegram</option>
-                                  <option value="meta_title_ru">Meta title RU</option>
-                                  <option value="meta_title_uz">Meta title UZ</option>
-                                  <option value="meta_title_en">Meta title EN</option>
-                                  <option value="meta_description_ru">Meta description Ru</option>
-                                  <option value="meta_description_uz">Meta description UZ</option>
-                                  <option value="meta_description_en">Meta description EN</option>
+                                  <option value="youtube">Youtube</option>
                               </select>
                               @if($errors->has('key'))
                                   <div class="alert alert-success alert-dismissible fade show" role="alert">

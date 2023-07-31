@@ -25,16 +25,20 @@
                         <div class="row">
                             <div class="col-md-8">
                                 <label for="key">Key</label>
-                                <select name="key" id="key" class="form-control">
+                                <select name="key" id="key"class="form-control">
                                     <option value="address_uz" @if($option->key == 'address_uz') selected @endif>Address UZ</option>
                                     <option value="address_ru" @if($option->key == 'address_ru') selected @endif>Address RU</option>
                                     <option value="address_en" @if($option->key == 'address_en') selected @endif>Address EN</option>
+                                    <option value="lanrdmarks_uz" @if($option->key == 'lanrdmarks_uz') selected @endif>Lanrdmarks UZ</option>
+                                    <option value="lanrdmarks_ru" @if($option->key == 'lanrdmarks_ru') selected @endif>Lanrdmarks RU</option>
+                                    <option value="lanrdmarks_en" @if($option->key == 'lanrdmarks_en') selected @endif>Lanrdmarks EN</option>
                                     <option value="phone" @if($option->key == 'phone') selected @endif>Phone</option>
+                                    <option value="fax" @if($option->key == 'fax') selected @endif>Fax</option>
                                     <option value="email" @if($option->key == 'email') selected @endif>E-mail</option>
                                     <option value="map" @if($option->key == 'map') selected @endif>Google or Yandex MAP</option>
                                     <option value="instagram" @if($option->key == 'instagram') selected @endif>Instagram</option>
                                     <option value="facebook" @if($option->key == 'facebook') selected @endif>Facebook</option>
-                                    <option value="telegram" @if($option->key == 'telegram') selected @endif>Telegram</option>
+                                    <option value="youtube" @if($option->key == 'youtube') selected @endif>Youtube</option>
                                 </select>
                                 @if($errors->has('key'))
                                     <div class="alert alert-success alert-dismissible fade show" role="alert">
@@ -68,7 +72,6 @@
                     </div>
                 </div>
             </form>
-
         </div>
     </div>
 @endsection

@@ -3,10 +3,10 @@
 namespace App\Http\Controllers\Front;
 
 use App\Http\Controllers\Controller;
-use App\Models\Admin\Team;
+use App\Models\Team;
 use Illuminate\Http\Request;
 
-class TeamController extends Controller
+class TeamsController extends Controller
 {
     public function list()
     {
@@ -18,6 +18,7 @@ class TeamController extends Controller
     public function show($id)
     {
         $team = Team::find($id);
+
         return view('front.our-team.show', compact('team'));
     }
 }

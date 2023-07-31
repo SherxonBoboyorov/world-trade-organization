@@ -22,10 +22,6 @@
               
             <div class="col col-1">
               <p class="text" style="margin-top: 0px !important">
-                {!! $page->{'sub_content_' . app()->getLocale()} !!}
-              </p>
-
-              <p class="text">
                 {!! $page->{'content_' . app()->getLocale()} !!}
               </p>
             </div>
