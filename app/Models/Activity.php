@@ -32,6 +32,11 @@ class Activity extends Model
         'meta_description_en',
     ];
 
+    public function activitycategory()
+    {
+        return $this->belongsTo(ActivityCategory::class,  'category_id', 'id');
+    }
+
 
     public static function uploadImage($request): ?string
     {

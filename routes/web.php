@@ -8,7 +8,7 @@ use App\Http\Controllers\Admin\SliderController;
 use App\Http\Controllers\Admin\PageController;
 use App\Http\Controllers\Admin\ArticleController;
 use App\Http\Controllers\Admin\OptionsController;
-use App\Http\Controllers\Admin\TeamController as AdminTeamController;
+use App\Http\Controllers\Admin\TeamController;
 use App\Http\Controllers\Admin\ActivityCategoryController;
 use App\Http\Controllers\Admin\ActivityController;
 use App\Http\Controllers\Admin\EventController;
@@ -17,7 +17,7 @@ use UniSharp\Laravel\LaravelFilemanager\Lfm;
 
 use App\Http\Controllers\Front\IndexController;
 use App\Http\Controllers\Front\PageController as Pages; 
-use App\Http\Controllers\Front\TeamController;
+// use App\Http\Controllers\Front\TeamController;
 use App\Http\Controllers\Front\ArticleController as Articles;
 use App\Http\Controllers\Front\ContactController;
 use App\Http\Controllers\Front\EventsController;

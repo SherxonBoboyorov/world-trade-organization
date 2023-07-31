@@ -16,4 +16,10 @@ class ActivityCategory extends Model
         'title_uz',
         'title_en',
     ];
+
+
+    public function activities()
+    {
+        return $this->hasMany(Activity::class);
+    }
 }

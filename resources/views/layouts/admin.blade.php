@@ -64,7 +64,7 @@
                         <a href="{{ route('team.index') }}" class="nav-link">
                         <i class="nav-icon"></i>
                         <p>
-                            Teams
+                            Team
                             <i class="right fas fa-angle-left"></i>
                         </p>
                         </a>

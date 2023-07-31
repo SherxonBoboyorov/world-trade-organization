@@ -11,11 +11,11 @@
           @foreach($sliders as $slider)
             
           <div class="swiper-slide">
-            <img src="{{ asset($slider->image_url) }}" alt="" />
+            <img src="{{ asset($slider->image) }}" alt="" />
             <div class="block">
               <div class="text-content">
                 <div class="title">{{ $slider->{'title_' . app()->getLocale()} }}</div>
-                <div class="description">{{ $slider->{'sub_content_' . app()->getLocale()} }}</div>
+                <div class="description">{{ $slider->{'content_' . app()->getLocale()} }}</div>
               </div>
             </div>
             <div class="text-block"></div>
@@ -40,7 +40,7 @@
                 <hr />
               </div>
               <p class="text">
-                {!! $page->{'sub_content_' . app()->getLocale()} !!}
+                {!! $page->{'content_' . app()->getLocale()} !!}
               </p>
               
               <div class="btn">
@@ -50,7 +50,7 @@
               </div>
             </div>
             <div class="col col-2">
-              <img src="{{ asset($page->image_main_url) }}" alt="" />
+              <img src="{{ asset($page->image) }}" alt="" />
             </div>
             @endforeach
           </div>
@@ -70,7 +70,7 @@
               
             <div class="col">
               <a href="{{ route('our-team', $team->id) }}">
-                <img src="{{ asset($team->image_url) }}" alt="" />
+                <img src="{{ asset($team->image) }}" alt="" />
                 <hr />
                 <div class="text-content">
                   <p class="title">{{ $team->{'title_' . app()->getLocale()} }}</p>
@@ -105,11 +105,11 @@
               
             <div class="col">
               <a href="{{ route('activitiy', $activity->id) }}">
-                <img src="{{ asset($activity->image_url) }}" alt="" />
+                <img src="{{ asset($activity->image) }}" alt="" />
                 <div class="text-content">
                   <div class="date-content">
                     <div class="type">{{ $activity->activitycategory->{'title_' . app()->getLocale()} }}</div>
-                    <div class="date">{{ $activity->date_mask->format('F d,Y') }}</div>
+                    <div class="date">{{ $activity->created_at->format('F d, Y') }}</div>
                   </div>
                   <p class="title">{{ $activity->{'title_' . app()->getLocale()} }}</p>
                   <h6 class="description">
@@ -137,14 +137,14 @@
               
             <div class="col">
               <a href="{{ route('article', $article->id) }}">
-                <img src="{{ asset($article->image_url) }}" alt="" />
+                <img src="{{ asset($article->image) }}" alt="" />
                 <div class="text-content">
                   <div class="date-content">
-                    <div class="date">{{ $article->date_mask->format('F d,Y') }}</div>
+                    <div class="date">{{ $article->created_at->format('F d, Y') }}</div>
                   </div>
                   <p class="title">{{ $article->{'title_' . app()->getLocale()} }}</p>
                   <h6 class="description">
-                    {!! $article->{'sub_content_' . app()->getLocale()} !!}
+                    {!! $article->{'content_' . app()->getLocale()} !!}
                   </h6>
                 </div>
               </a>
@@ -171,7 +171,7 @@
               <a href="{{ route('event', $event->id) }}">
                 <div class="text-content">
                   <div class="date-content">
-                    <div class="date">{{ $event->date_mask->format('F d,Y') }}</div>
+                    <div class="date">{{ $event->created_at->format('F d, Y') }}</div>
                   </div>
                   <p class="title">{{ $event->{'title_' . app()->getLocale()} }}</p>
                   <h6 class="description">
