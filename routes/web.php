@@ -11,6 +11,7 @@ use App\Http\Controllers\Admin\OptionsController;
 use App\Http\Controllers\Admin\TeamController as AdminTeamController;
 use App\Http\Controllers\Admin\ActivityCategoryController;
 use App\Http\Controllers\Admin\ActivityController;
+use App\Http\Controllers\Admin\EventController;
 use UniSharp\Laravel\LaravelFilemanager\Lfm;
 
 
@@ -34,7 +35,8 @@ Route::middleware(['role:admin'])->prefix('dashboard')->group(static function ()
         'options' => OptionsController::class,
         'team' => TeamController::class,
         'activitycategory' => ActivityCategoryController::class,
-        'activity' => ActivityController::class
+        'activity' => ActivityController::class,
+        'event' => EventController::class
     ]);
 });
 

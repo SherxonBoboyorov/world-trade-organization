@@ -8,13 +8,13 @@
         <div class="row">
             <div class="col-sm-12">
                 <div class="page-title-box">
-                    <h4 class="page-title">All Article</h4>
+                    <h4 class="page-title">All Event</h4>
                 </div>
             </div>
             <div class="clearfix"></div>
         </div>
 
-             <a href="{{ route('article.create')}}" class="btn bg-success mb-2">Add Article +</a>
+             <a href="{{ route('event.create')}}" class="btn bg-success mb-2">Add Event +</a>
 
 
         <div class="card">
@@ -43,22 +43,22 @@
                         </tr>
                     </thead>
                     <tbody>
-                        @foreach ($articles as $article)
+                        @foreach ($events as $event)
                         <tr>
-                            <td>{{ $article->id }}</td>
+                            <td>{{ $event->id }}</td>
                             <td>
-                                <img src="{{ asset($article->image) }}" alt="" width="35" height="35">
+                                <img src="{{ asset($event->image) }}" alt="" width="35" height="35">
                             </td>
-                            <td>{{ $article->title_uz }}</td>
-                            <td>{{ $article->title_ru }}</td>
-                            <td>{{ $article->title_en }}</td>
+                            <td>{{ $event->title_uz }}</td>
+                            <td>{{ $event->title_ru }}</td>
+                            <td>{{ $event->title_en }}</td>
                             <td>
-                                <a href="{{ route('article.edit', $article->id) }}" class="btn btn-primary btn-icon">
+                                <a href="{{ route('event.edit', $event->id) }}" class="btn btn-primary btn-icon">
                                     <i class="fa fa-edit">Edit</i>
                                 </a>
                             </td>
                             <td>
-                                <form action="{{ route('article.destroy', $article->id) }}" method="POST">
+                                <form action="{{ route('event.destroy', $event->id) }}" method="POST">
                                     @csrf
                                     @method('DELETE')
                                     <button type="submit" class="btn btn-danger btn-icon">
@@ -70,7 +70,7 @@
                         @endforeach
                     </tbody>
                 </table>
-                {!! $articles->links() !!}
+                {!! $events->links() !!}
             </div>
         </div>
     </div>

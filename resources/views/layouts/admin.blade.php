@@ -98,17 +98,25 @@
                      </li>
                     {{-- end  --}}
 
-
-                    
-
-
-
                     {{-- start  --}}
                      <li class="nav-item">
                         <a href="{{ route('article.index') }}" class="nav-link">
                         <i class="nav-icon"></i>
                         <p>
                             News
+                            <i class="right fas fa-angle-left"></i>
+                        </p>
+                        </a>
+                     </li>
+                     {{-- end  --}}
+
+
+                     {{-- start  --}}
+                     <li class="nav-item">
+                        <a href="{{ route('event.index') }}" class="nav-link">
+                        <i class="nav-icon"></i>
+                        <p>
+                            Event
                             <i class="right fas fa-angle-left"></i>
                         </p>
                         </a>
