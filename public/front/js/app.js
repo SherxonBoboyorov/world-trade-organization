@@ -22,29 +22,10 @@ navbarToggler?.addEventListener("click", () => {
   }
 });
 
-console.log(closeVideo);
-closeVideo?.addEventListener("click", () => {
-  videoSection.classList.remove("active-video");
-  videoBoxVideo.pause();
-});
-
-videoBoxImg?.addEventListener("click", () => {
-  videoSection.classList.add("active-video");
-  setTimeout(() => {
-    videoBoxVideo.currentTime = 0;
-    videoBoxVideo.play();
-  }, 1000);
-});
-
 videoPlay?.addEventListener("click", () => {
-  videoSection.classList.add("active-video");
-
-  setTimeout(() => {
-    videoBoxVideo.currentTime = 0;
-    videoBoxVideo.play();
-  }, 1000);
+  document.querySelector("#videoImg").click();
 });
 
 const p = document.querySelector("#home-wwd-paragraph");
-for (let i = 0; i < p.children.length; i++)
+for (let i = 0; i < p?.children.length; i++)
   if (p.children[i].localName == "img") console.log(p.children[i].remove());

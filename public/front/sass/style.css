@@ -20,7 +20,6 @@ body {
 }
 
 .title-block {
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
@@ -51,6 +50,11 @@ hr {
   max-width: 1100px;
   width: 100%;
   margin: 0 auto !important;
+}
+
+.fancybox-slide--iframe,
+.fancybox-slide--image {
+  padding: 20px; /* Adjust the padding value as per your requirement */
 }
 
 .container-fluid {
@@ -176,7 +180,6 @@ hr {
     align-items: center;
   }
   .header .header-content .link-content .navbar-content .navbar-nav .nav .nav-link {
-    width: -webkit-fit-content !important;
     width: -moz-fit-content !important;
     width: fit-content !important;
   }
@@ -357,7 +360,7 @@ hr {
 }
 @font-face {
   font-family: "Gotham Pro";
-  src: url("./../../shrifts/gothampro.ttf");
+  src: url("./../fonts/gothampro.ttf");
 }
 .container-fluid {
   min-height: 100vh !important;
@@ -376,7 +379,6 @@ body {
 }
 
 .title-block {
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
@@ -409,6 +411,11 @@ hr {
   margin: 0 auto !important;
 }
 
+.fancybox-slide--iframe,
+.fancybox-slide--image {
+  padding: 20px; /* Adjust the padding value as per your requirement */
+}
+
 .what-we-do {
   margin-top: 40px !important;
 }
@@ -416,7 +423,6 @@ hr {
   display: flex;
   justify-content: space-between;
   align-items: stretch;
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
 }
@@ -512,7 +518,7 @@ hr {
 
 @font-face {
   font-family: "Gotham Pro";
-  src: url("./../../shrifts/gothampro.ttf");
+  src: url("./../fonts/gothampro.ttf");
 }
 .container-fluid {
   min-height: 100vh !important;
@@ -531,7 +537,6 @@ body {
 }
 
 .title-block {
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
@@ -562,6 +567,11 @@ hr {
   max-width: 1100px;
   width: 100%;
   margin: 0 auto !important;
+}
+
+.fancybox-slide--iframe,
+.fancybox-slide--image {
+  padding: 20px; /* Adjust the padding value as per your requirement */
 }
 
 * {
@@ -620,7 +630,6 @@ hr {
 }
 .our-team .our-team-block .row .col a .text-content {
   width: 100%;
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   margin-top: 18px !important;
@@ -672,7 +681,7 @@ hr {
 }
 @font-face {
   font-family: "Gotham Pro";
-  src: url("./../../shrifts/gothampro.ttf");
+  src: url("./../fonts/gothampro.ttf");
 }
 .container-fluid {
   min-height: 100vh !important;
@@ -691,7 +700,6 @@ body {
 }
 
 .title-block {
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
@@ -724,6 +732,11 @@ hr {
   margin: 0 auto !important;
 }
 
+.fancybox-slide--iframe,
+.fancybox-slide--image {
+  padding: 20px; /* Adjust the padding value as per your requirement */
+}
+
 .activities {
   width: 100%;
   margin-top: 50px !important;
@@ -739,7 +752,6 @@ hr {
 }
 .activities .btns > a {
   cursor: pointer;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   height: 40px;
@@ -784,7 +796,6 @@ hr {
 }
 .activities .row .col > a .text-content {
   width: 100%;
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   margin-top: 18px !important;
@@ -793,7 +804,6 @@ hr {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   font-size: 14px;
@@ -874,7 +884,7 @@ hr {
 }
 @font-face {
   font-family: "Gotham Pro";
-  src: url("./../../shrifts/gothampro.ttf");
+  src: url("./../fonts/gothampro.ttf");
 }
 .container-fluid {
   min-height: 100vh !important;
@@ -893,7 +903,6 @@ body {
 }
 
 .title-block {
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
@@ -924,6 +933,11 @@ hr {
   max-width: 1100px;
   width: 100%;
   margin: 0 auto !important;
+}
+
+.fancybox-slide--iframe,
+.fancybox-slide--image {
+  padding: 20px; /* Adjust the padding value as per your requirement */
 }
 
 .news {
@@ -961,7 +975,6 @@ hr {
 }
 .news .row .col > a .text-content {
   width: 100%;
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   margin-top: 18px !important;
@@ -971,7 +984,6 @@ hr {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   font-size: 14px;
@@ -1043,7 +1055,7 @@ hr {
 }
 @font-face {
   font-family: "Gotham Pro";
-  src: url("./../../shrifts/gothampro.ttf");
+  src: url("./../fonts/gothampro.ttf");
 }
 .container-fluid {
   min-height: 100vh !important;
@@ -1062,7 +1074,6 @@ body {
 }
 
 .title-block {
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
@@ -1093,6 +1104,11 @@ hr {
   max-width: 1100px;
   width: 100%;
   margin: 0 auto !important;
+}
+
+.fancybox-slide--iframe,
+.fancybox-slide--image {
+  padding: 20px; /* Adjust the padding value as per your requirement */
 }
 
 .events {
@@ -1130,7 +1146,6 @@ hr {
 .events .row .col > a .text-content {
   margin: 15px !important;
   width: 95%;
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   margin-top: 18px !important;
@@ -1141,7 +1156,6 @@ hr {
   align-items: center;
   font-size: 14px;
   font-weight: 500;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   margin-bottom: 15px !important;
@@ -1201,7 +1215,7 @@ hr {
 }
 @font-face {
   font-family: "Gotham Pro";
-  src: url("./../../shrifts/gothampro.ttf");
+  src: url("./../fonts/gothampro.ttf");
 }
 .container-fluid {
   min-height: 100vh !important;
@@ -1220,7 +1234,6 @@ body {
 }
 
 .title-block {
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
@@ -1251,6 +1264,11 @@ hr {
   max-width: 1100px;
   width: 100%;
   margin: 0 auto !important;
+}
+
+.fancybox-slide--iframe,
+.fancybox-slide--image {
+  padding: 20px; /* Adjust the padding value as per your requirement */
 }
 
 .footer {
@@ -1324,7 +1342,6 @@ hr {
   color: #880019;
 }
 .footer .footer-content .row .col > div {
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   margin-top: 10px;
@@ -1390,7 +1407,7 @@ hr {
 }
 @font-face {
   font-family: "Gotham Pro";
-  src: url("./../../shrifts/gothampro.ttf");
+  src: url("./../fonts/gothampro.ttf");
 }
 .container-fluid {
   min-height: 100vh !important;
@@ -1409,7 +1426,6 @@ body {
 }
 
 .title-block {
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
@@ -1440,6 +1456,11 @@ hr {
   max-width: 1100px;
   width: 100%;
   margin: 0 auto !important;
+}
+
+.fancybox-slide--iframe,
+.fancybox-slide--image {
+  padding: 20px; /* Adjust the padding value as per your requirement */
 }
 
 .back-img {
@@ -1493,7 +1514,7 @@ hr {
 }
 @font-face {
   font-family: "Gotham Pro";
-  src: url("./../../shrifts/gothampro.ttf");
+  src: url("./../fonts/gothampro.ttf");
 }
 .container-fluid {
   min-height: 100vh !important;
@@ -1512,7 +1533,6 @@ body {
 }
 
 .title-block {
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
@@ -1543,6 +1563,11 @@ hr {
   max-width: 1100px;
   width: 100%;
   margin: 0 auto !important;
+}
+
+.fancybox-slide--iframe,
+.fancybox-slide--image {
+  padding: 20px; /* Adjust the padding value as per your requirement */
 }
 
 .member {
@@ -1620,7 +1645,7 @@ hr {
 }
 @font-face {
   font-family: "Gotham Pro";
-  src: url("./../../shrifts/gothampro.ttf");
+  src: url("./../fonts/gothampro.ttf");
 }
 .container-fluid {
   min-height: 100vh !important;
@@ -1639,7 +1664,6 @@ body {
 }
 
 .title-block {
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
@@ -1670,6 +1694,11 @@ hr {
   max-width: 1100px;
   width: 100%;
   margin: 0 auto !important;
+}
+
+.fancybox-slide--iframe,
+.fancybox-slide--image {
+  padding: 20px; /* Adjust the padding value as per your requirement */
 }
 
 .activities-post {
@@ -1794,7 +1823,7 @@ hr {
 }
 @font-face {
   font-family: "Gotham Pro";
-  src: url("./../../shrifts/gothampro.ttf");
+  src: url("./../fonts/gothampro.ttf");
 }
 .container-fluid {
   min-height: 100vh !important;
@@ -1813,7 +1842,6 @@ body {
 }
 
 .title-block {
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
@@ -1844,6 +1872,11 @@ hr {
   max-width: 1100px;
   width: 100%;
   margin: 0 auto !important;
+}
+
+.fancybox-slide--iframe,
+.fancybox-slide--image {
+  padding: 20px; /* Adjust the padding value as per your requirement */
 }
 
 .news-post {
@@ -1990,7 +2023,7 @@ hr {
 }
 @font-face {
   font-family: "Gotham Pro";
-  src: url("./../../shrifts/gothampro.ttf");
+  src: url("./../fonts/gothampro.ttf");
 }
 .container-fluid {
   min-height: 100vh !important;
@@ -2009,7 +2042,6 @@ body {
 }
 
 .title-block {
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
@@ -2040,6 +2072,11 @@ hr {
   max-width: 1100px;
   width: 100%;
   margin: 0 auto !important;
+}
+
+.fancybox-slide--iframe,
+.fancybox-slide--image {
+  padding: 20px; /* Adjust the padding value as per your requirement */
 }
 
 .events-post {
@@ -2078,9 +2115,6 @@ hr {
 .events-post .video-section .video-box video {
   display: none;
 }
-.events-post .video-section .video-box .close {
-  display: none;
-}
 .events-post .video-section .video-box .play {
   position: absolute;
   top: 0;
@@ -2100,51 +2134,6 @@ hr {
 .events-post .video-section .video-box .play i {
   font-size: 20px !important;
   color: #880019;
-}
-.events-post .video-section.active-video {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(24, 24, 27, 0.92);
-  top: 0px !important;
-  left: 0;
-  cursor: -webkit-grab;
-  cursor: grab;
-  z-index: 999;
-  padding: 10px !important;
-}
-.events-post .video-section.active-video .video-box {
-  width: 70%;
-  height: 80%;
-  cursor: default;
-}
-.events-post .video-section.active-video .video-box img,
-.events-post .video-section.active-video .video-box .play, .events-post .video-section.active-video .video-box .img-title {
-  display: none;
-}
-.events-post .video-section.active-video .video-box video {
-  display: block;
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 100%;
-  height: 100%;
-}
-.events-post .video-section.active-video .video-box .close {
-  position: absolute;
-  top: -40px;
-  right: 5px;
-  width: 50px;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: -webkit-grab;
-  cursor: grab;
-}
-.events-post .video-section.active-video .video-box .close i {
-  color: rgb(255, 255, 255);
-  font-size: 25px !important;
-  cursor: pointer;
 }
 .events-post .head-section {
   padding: 10px 0 !important;
@@ -2272,7 +2261,7 @@ hr {
 }
 @font-face {
   font-family: "Gotham Pro";
-  src: url("./../../shrifts/gothampro.ttf");
+  src: url("./../fonts/gothampro.ttf");
 }
 .container-fluid {
   min-height: 100vh !important;
@@ -2291,7 +2280,6 @@ body {
 }
 
 .title-block {
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
@@ -2322,6 +2310,11 @@ hr {
   max-width: 1100px;
   width: 100%;
   margin: 0 auto !important;
+}
+
+.fancybox-slide--iframe,
+.fancybox-slide--image {
+  padding: 20px; /* Adjust the padding value as per your requirement */
 }
 
 .contacts {
@@ -2423,7 +2416,7 @@ hr {
 }
 @font-face {
   font-family: "Gotham Pro";
-  src: url("./../../shrifts/gothampro.ttf");
+  src: url("./../fonts/gothampro.ttf");
 }
 .container-fluid {
   min-height: 100vh !important;
@@ -2442,7 +2435,6 @@ body {
 }
 
 .title-block {
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
@@ -2473,6 +2465,11 @@ hr {
   max-width: 1100px;
   width: 100%;
   margin: 0 auto !important;
+}
+
+.fancybox-slide--iframe,
+.fancybox-slide--image {
+  padding: 20px; /* Adjust the padding value as per your requirement */
 }
 
 .center {
@@ -2506,7 +2503,7 @@ hr {
 
 @font-face {
   font-family: "Gotham Pro";
-  src: url("./../../shrifts/gothampro.ttf");
+  src: url("./../fonts/gothampro.ttf");
 }
 .container-fluid {
   min-height: 100vh !important;
@@ -2525,7 +2522,6 @@ body {
 }
 
 .title-block {
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
@@ -2556,6 +2552,11 @@ hr {
   max-width: 1100px;
   width: 100%;
   margin: 0 auto !important;
+}
+
+.fancybox-slide--iframe,
+.fancybox-slide--image {
+  padding: 20px; /* Adjust the padding value as per your requirement */
 }
 
 .languages-dropdown__ru__list {

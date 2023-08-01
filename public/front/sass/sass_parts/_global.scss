@@ -70,4 +70,7 @@ hr {
   margin: 0 auto !important;
 }
 
-
+.fancybox-slide--iframe,
+.fancybox-slide--image {
+  padding: 20px; /* Adjust the padding value as per your requirement */
+}
