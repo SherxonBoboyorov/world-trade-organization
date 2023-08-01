@@ -55,19 +55,19 @@
             <form action="{{ route('saveCallback') }}" method="POST">
               @csrf
               <div class="col">
-                <input type="text" name="fullname" placeholder="Name" required/>
+                <input type="text" name="fullname" placeholder="@lang('front.name')" required/>
               </div>
 
               <div class="row">
                 <div class="col">
-                  <input type="text" name="email" placeholder="Email" required/>
+                  <input type="text" name="email" placeholder="@lang('front.email')" required/>
                 </div>
                 <div class="col">
-                  <input type="text" name="phone_number" placeholder="Phone number" required/>
+                  <input type="text" name="phone_number" placeholder="@lang('front.phone_number')" required/>
                 </div>
               </div>
               <div class="col">
-                <textarea cols="30" rows="10" name="content" placeholder="Comment" required></textarea>
+                <textarea cols="30" rows="10" name="content" placeholder="@lang('front.comment')" required></textarea>
               </div>
 
               <button type="submit">@lang('front.send')</button>

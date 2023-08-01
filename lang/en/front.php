@@ -56,7 +56,9 @@ return [
      'email' => 'Email',
      'address' => 'Address',
      'landmarks' => 'Landmarks',
-     'all_rights_reserved' => 'All rights reserved'
+     'all_rights_reserved' => 'All rights reserved',
+     'name' => 'Name',
+     'comment' => 'Comment'
 ]
 
 

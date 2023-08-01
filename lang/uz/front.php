@@ -57,7 +57,9 @@ return [
     'email' => 'Elektron pochta',
     'address' => 'Manzil',
     'landmarks' => 'Belgilar',
-    'all_rights_reserved' => 'Barcha huquqlar himoyalangan'
+    'all_rights_reserved' => 'Barcha huquqlar himoyalangan',
+    'name' => 'Ism',
+    'comment' => 'Fikr bildirish'
 ]
 
 

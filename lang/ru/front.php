@@ -56,7 +56,10 @@ return [
      'email' => 'Электронная почта',
      'address' => 'Адрес',
      'landmarks' => 'Ориентиры',
-     'all_rights_reserved' => 'Все права защищены'
+     'all_rights_reserved' => 'Все права защищены',
+     'name' => 'Имя',
+     'comment' => 'Комментарий'
+
 ]
 
 
