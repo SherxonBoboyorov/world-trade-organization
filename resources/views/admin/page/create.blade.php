@@ -59,6 +59,56 @@
                             @endif
                         </div>
                      </div><br>
+
+
+
+                     <div class="row" style="margin-top: 15px">
+                        <div class="col-md-6">
+                            <label for="sub_content_uz">Sub Content [Uzbek]</label>
+                            <textarea name="sub_content_uz" class="form-control" id="sub_content_uz" cols="30" rows="5"></textarea>
+                            @if($errors->has('sub_content_uz'))
+                            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                {{ $errors->first('sub_content_uz') }}
+                            </div>
+                            @endif
+                        </div>
+                    </div>
+
+                     <div class="row" style="margin-top: 15px">
+                        <div class="col-md-6">
+                            <label for="sub_content_ru">Sub Content [Russian]</label>
+                            <textarea name="sub_content_ru" class="form-control" id="sub_content_ru" cols="30" rows="5"></textarea>
+                            @if($errors->has('sub_content_ru'))
+                            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                {{ $errors->first('sub_content_ru') }}
+                            </div>
+                            @endif
+                        </div>
+                    </div>
+
+
+                    <div class="row" style="margin-top: 15px">
+                        <div class="col-md-6">
+                            <label for="sub_content_en">Sub Content [English]</label>
+                            <textarea name="sub_content_en" class="form-control" id="sub_content_en" cols="30" rows="5"></textarea>
+                            @if($errors->has('sub_content_en'))
+                            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                {{ $errors->first('sub_content_en') }}
+                            </div>
+                            @endif
+                        </div>
+                    </div>
+
+                    <br><br>
                     <div class="row" style="margin-top: 15px">
                         <div class="col-md-12">
                             <label for="content_uz">Content [uzbek]</label>

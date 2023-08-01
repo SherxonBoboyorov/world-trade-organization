@@ -28,19 +28,19 @@
       </div>
       <!-- Slider end -->
 
-      <!-- What we do start -->
-      <div class="container">
+       <!-- What we do start -->
+       <div class="container">
         <div class="what-we-do">
           <div class="row">
             @foreach($pages as $page)
-              
+
             <div class="col col-1">
               <div class="title-block">
                 <p class="title">{{ $page->{'title_' . app()->getLocale()} }}</p>
                 <hr />
               </div>
               <p class="text" id="home-wwd-paragraph">
-                {!! $page->{'content_' . app()->getLocale()} !!}
+                {!! $page->{'sub_content_' . app()->getLocale()} !!}
               </p>
               
               <div class="btn">
