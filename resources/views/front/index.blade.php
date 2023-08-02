@@ -15,7 +15,7 @@
             <div class="block">
               <div class="text-content">
                 <div class="title">{{ $slider->{'title_' . app()->getLocale()} }}</div>
-                <div class="description">{{ $slider->{'content_' . app()->getLocale()} }}</div>
+                <div class="description">{{ $slider->{'description_' . app()->getLocale()} }}</div>
               </div>
             </div>
             <div class="text-block"></div>
@@ -104,7 +104,7 @@
             @foreach($activities as $activity)
               
             <div class="col">
-              <a href="{{ route('activitiy', $activity->id) }}">
+              <a href="{{ route('activitiy', $activity->{'slug_' . app()->getLocale()}) }}">
                 <img src="{{ asset($activity->image) }}" alt="" />
                 <div class="text-content">
                   <div class="date-content">
@@ -168,7 +168,7 @@
           <div class="row">
             @foreach($events as $event)
             <div class="col">
-              <a href="{{ route('event', $event->id) }}">
+              <a href="{{ route('event', $event->{'slug_' . app()->getLocale()}) }}">
                 <div class="text-content">
                   <div class="date-content">
                     <div class="date">{{ $event->created_at->format('F d, Y') }}</div>
