@@ -12,12 +12,12 @@
 
   .row {
     margin-top: 20px !important;
-    @include flex(flex-start !important, center);
     width: 100%;
+    display: flex;
     flex-wrap: wrap;
 
     .col {
-      width: 33.3% !important;
+      width: calc(100% / 3) !important;
       border-radius: 5px;
       background: #fff;
       padding: 10px !important;
@@ -27,6 +27,7 @@
         box-shadow: 0px 2px 14px 0px rgba(0, 0, 0, 0.1);
         border-radius: 5px;
         overflow: hidden;
+        height: 100%;
 
         img {
           height: 250px;
@@ -69,7 +70,7 @@
   }
 
   hr {
-    margin: 20px 0 !important;
+    margin: 40px 0 !important;
   }
 }
 

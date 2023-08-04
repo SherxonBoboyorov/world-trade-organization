@@ -11,17 +11,14 @@
 
   .row {
     margin-top: 20px !important;
-    @include flex(flex-start !important, flex-start);
     width: 100%;
-    height: auto;
+    display: flex;
     flex-wrap: wrap;
 
     .col {
-      width: 33.3% !important;
+      width: calc(100% / 3) !important;
       padding: 10px !important;
-      height: 100%;
       flex-direction: 1;
-
       & > a {
         border: 1px solid white;
         overflow: hidden;

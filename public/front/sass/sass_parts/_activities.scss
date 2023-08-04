@@ -33,9 +33,10 @@
   }
 
   .row {
-    @include flex(flex-start !important, center);
+    // @include flex(flex-start !important, flex-start);
     margin-top: 20px !important;
     width: 100%;
+    display: flex;
     flex-wrap: wrap !important;
 
     .col {
@@ -93,6 +94,10 @@
     }
   }
 
+  hr {
+    margin-top: 20px !important;
+  }
+
   .title-block {
     margin-left: 10px !important;
   }
@@ -132,7 +137,7 @@
 
         .date-content {
           margin-top: -10px !important;
-          font-size: 12px !important;
+          font-size: 13px !important;
           margin-bottom: 15px !important;
 
           .type {
@@ -146,7 +151,7 @@
         }
 
         .description {
-          font-size: 11px !important;
+          font-size: 14px !important;
           line-height: 0px !important;
         }
       }
