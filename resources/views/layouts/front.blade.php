@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"/>
     <link rel="stylesheet" href="{{ asset('front/sass/style.css') }}" />
     <title>WTO | Home</title>
   </head>
@@ -17,14 +16,12 @@
         <nav class="header-content navbar navbar-expand-md">
           <a class="navbar-brand logos" href="{{ route('/') }}">
             <img src="{{ asset('front/images/logos.jpeg') }}" alt="" />
-          </a> 
+          </a>
 
-          <div class="collapse navbar-collapse link-content" id="navbarNavAltMarkup">
-
-           
-
+          <div class="collapse navbar-collapse link-content" id="navbarNavAltMarkup" >
             <div class="navbar-content">
-              <div class="navbar-nav">
+              <div class="link-wrapper">
+               <div class="navbar-nav">
                 <div class="nav">
                   <a class="nav-link" href="{{ route('about') }}">@lang('front.about')</a>
                 </div>
@@ -44,37 +41,36 @@
                   <a class="nav-link" href="{{ route('contact') }}">@lang('front.contacts')</a>
                 </div>
               </div>
-            </div>
-          </div>
 
+                <div class="lang-dr">
+                  <section class="languages-dropdown__ru__list">
+                    <!-- language start -->
 
-          <section class="languages-dropdown__ru__list">
-            <!-- language start -->
+                    <div class="languages-dropdown__ru">
 
-            <div class="languages-dropdown__ru">
+                     <div class="languages-dropdown__ru_cart dropdown-trigger"data-target='dropdown1'>
+                      <a data-target='dropdown1' class="languages-dropdown__en__link">{{ strtoupper(app()->getLocale()) }}</a>
+                     <span><i class="fas fa-angle-down"></i></span>
+                    </div>
 
-                <div class="languages-dropdown__ru_cart dropdown-trigger"data-target='dropdown1'>
-                    <a data-target='dropdown1' class="languages-dropdown__en__link">{{ strtoupper(app()->getLocale()) }}</a>
-                    <span><i class="fas fa-angle-down"></i></span>
-                </div>
-
-                <div class="languages-dropdown__ru_none dropdown-content" id='dropdown1'>
-                    @foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
-                        @if($localeCode != app()->getLocale())
-                        <div class="languages-dropdown__ru_list @if($localeCode == app()->getLocale()) active @endif">
+                      <div class="languages-dropdown__ru_none dropdown-content" id='dropdown1'>
+                        @foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
+                         @if($localeCode != app()->getLocale())
+                         <div class="languages-dropdown__ru_list @if($localeCode == app()->getLocale()) active @endif">
                             <a rel="alternate" class="languages-dropdown__en__link" hreflang="{{ $localeCode }}" href="{{ LaravelLocalization::getLocalizedURL($localeCode, null, [], true) }}">
                                 {{ strtoupper($localeCode) }}
                             </a>
                         </div>
                         @endif
-                    @endforeach
+                       @endforeach
+                     </div>
+                    </div>
+                  </section>
                 </div>
+
+              </div>
             </div>
-
-            <!-- language start -->
-            <button class="languages-dropdown__burger__none sidenav-trigger" data-target="slide-out"><i class="fas fa-bars"></i></button>
-        </section>
-
+          </div>
           <button class="navbar-toggler" type="button">
             <i class="fa-solid fa-bars"></i>
           </button>
@@ -157,20 +153,18 @@
                 </p>
               </div>
             </div>
+
           </div>
         </div>
       </div>
-    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="{{ asset('front/js/jquery-3.6.3.min.js') }}"></script>
     <script src="{{ asset('front/js/materialize.min.js') }}"></script>
     <script src="{{ asset('front/js/mar_ru.js') }}"></script>
     <script src="{{ asset('front/js/swiper.js') }}"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
     <script src="{{ asset('front/js/app.js') }}"></script>
 
   </body>
 </html>
-    
+        

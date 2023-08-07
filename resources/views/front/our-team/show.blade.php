@@ -6,7 +6,7 @@
 
       <!-- Background Image start -->
       <div class="back-img">
-        <img src="{{ asset('front/images/./../images/back-img.jpg') }}" alt="" />
+        <img src="{{ asset('front/images/back-img-member.png') }}" alt="" />
         <div class="text-content">
           <p class="title">{{ $team->{'title_' . app()->getLocale()} }}</p>
           <p class="text"><a href="{{ route('our-teams') }}">@lang('front.our_team')</a> - {{ $team->{'title_' . app()->getLocale()} }}</p>

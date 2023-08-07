@@ -9,6 +9,7 @@
   flex-wrap: wrap;
 
   .head-section {
+
     width: 25%;
     padding: 20px 10px !important;
     border-radius: 5px;
@@ -112,6 +113,7 @@
     margin-top: 20px !important;
 
     .row {
+      order: 2;
       width: 100% !important;
 
       .title {
@@ -130,11 +132,13 @@
     }
 
     .head-section {
+      order: 1;
       width: 100% !important;
-      
+      margin-bottom: 40px !important;
+
       .link-logos {
-        width: 200px !important;
-        float: right;
+        width: 100% !important;
+        float: left;
       }
     }
   }

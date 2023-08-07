@@ -4,7 +4,7 @@
 
       <!-- Background Image start -->
       <div class="back-img">
-        <img src="{{ asset('front/images/./../images/back-img.jpg') }}" alt="" />
+        <img src="{{ asset('front/images/activities-back-img.jpg') }}" alt="" />
         <div class="text-content">
           <p class="title">{{ $activitiy->{'title_' . app()->getLocale()} }}</p>
           <p class="text"><a href="{{ route('activities', ['id' => 1]) }}">@lang('front.activities')</a> - {{ $activitiy->{'title_' . app()->getLocale()} }}</p>

@@ -4,7 +4,7 @@
   margin-top: 40px !important;
 
   .row {
-    @include flex(space-between, stretch);
+    @include flex(space-between, flex-start);
     height: fit-content;
 
     .col {
@@ -16,6 +16,11 @@
         flex-direction: column;
         flex: 1;
         display: flex;
+
+        #home-wwd-paragraph {
+          height: 320px !important;
+          overflow: hidden;
+        }
 
         .text {
           color: $colorDark;
@@ -62,7 +67,7 @@
 
         img {
           width: 100%;
-          height: 450px;
+          height: 455px;
         }
       }
     }
@@ -73,9 +78,16 @@
   .what-we-do .row {
     flex-wrap: wrap !important;
     padding: 0 10px !important;
+    align-items: flex-start;
 
     .col {
       width: 100% !important;
+
+      &.col-1 {
+        #home-wwd-paragraph {
+          height: fit-content !important;
+        }
+      }
     }
   }
 }
@@ -104,10 +116,4 @@
       }
     }
   }
-}
-
-
-#home-wwd-paragraph {
-  height: 320px !important;
-  overflow: hidden;
 }

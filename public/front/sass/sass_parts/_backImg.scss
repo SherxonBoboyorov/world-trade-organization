@@ -3,7 +3,7 @@
 .back-img {
   margin-top: 70px !important;
   width: 100%;
-  height: 180px;
+  height: 220px;
   position: relative;
   @include flex(center, center);
 
@@ -14,6 +14,7 @@
     width: 100%;
     height: 100% !important;
     z-index: -1;
+    object-fit: cover;
   }
 
   .text-content {
@@ -38,9 +39,9 @@
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .back-img {
-    height: 120px;
+    height: 150px;
 
     .text-content {
       .title {
@@ -55,5 +56,12 @@
 
   .what-we-do {
     margin-top: 20px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .back-img {
+    height: 120px;
+    margin-top: 60px !important;
   }
 }

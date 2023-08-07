@@ -1,14 +1,16 @@
 @import "./global";
 
+
 .languages-dropdown__ru__list {
-  width: 40px;
-  margin: 2px 20px 0 20px !important;
+  margin: 2px 5px 0 35px !important;
+  width: fit-content;
 }
 
 .languages-dropdown {
   &__en__link {
     color: $colorBlue;
     font-size: 14px !important;
+    text-transform: uppercase;
   }
 
   &__ru {
@@ -35,7 +37,6 @@
 
   &__ru_none {
     position: absolute;
-    z-index: 10;
     margin-top: 5px;
     top: 100% !important;
     left: -10px !important;
@@ -77,4 +78,19 @@
     background-color: transparent;
     display: none;
   }
+}
+
+@media (max-width: 950px) {
+  .lang-dr {
+    order: 1 !important;
+    width: 100% !important;
+    height: 39px;
+    background-color: #f4f8fa !important;
+    @include flex(flex-start, center);
+
+    .languages-dropdown__ru__list {
+      margin-left: 30px !important;
+    }
+  }
+  
 }

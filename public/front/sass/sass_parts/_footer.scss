@@ -40,7 +40,7 @@
             margin-right: 0 !important;
             margin-left: auto !important;
             width: 150px;
-            @include flex(space-between, center);
+            @include flex(center, center);
 
             .sm-logo {
               width: 35px;
@@ -50,6 +50,8 @@
               background-color: rgba(192, 192, 192, 0.4156862745);
               @include flex(center, center);
               cursor: pointer;
+              margin-left: 15px !important;
+             
 
               i {
                 font-size: 17px !important;
@@ -105,27 +107,45 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 850px) {
   .footer .row .col {
     width: 100% !important;
+    justify-content: center !important;
+    &.col-1 {
+      p a {
+        margin-bottom: 20px !important;
+        text-align: center !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: flex-start !important;
+        flex-wrap: wrap !important;
+        position: relative;
+        span {
+          top: 20px;
+          width: 300px !important;
+          display: block !important;
+          position: absolute;
+        }
+      }
+    }
+    &.col-1 > div:nth-child(1),
+    &.col-1 > div:nth-child(2) {
+      display: none !important;
+    }
 
     &.col-2 {
-      justify-content: flex-start !important;
-
       div {
         width: 100%;
 
         p {
-          text-align: start !important;
+          text-align: center !important;
         }
 
         .link-logos {
           width: 100% !important;
-          justify-content: flex-start !important;
+          justify-content: center !important;
 
-          a {
-            margin-right: 15px !important;
-          }
+     
         }
       }
     }

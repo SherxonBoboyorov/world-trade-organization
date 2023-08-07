@@ -5,7 +5,7 @@
 
       <!-- Background Image start -->
       <div class="back-img">
-        <img src="{{ asset('front/images/./../images/back-img.jpg') }}" alt="" />
+        <img src="{{ asset('front/images/contacts-back-img.png') }}" alt="" />
         <div class="text-content">
           <p class="title">@lang('front.contacts')</p>
           <p class="text"><a href="{{ route('/') }}">@lang('front.main')</a> - @lang('front.contacts')</p>

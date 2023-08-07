@@ -58,29 +58,49 @@
       </div>
       <!-- What we do end -->
 
-        <!-- Our Team start -->
-      <div class="our-team">
-        <div class="our-team-block">
+      <!-- Our Team start -->
+
+       <div class="our-team">
+        <div class="our-team-block">            
           <div class="title-block">
             <p class="title">@lang('front.our_team')</p>
             <hr />
           </div>
-          <div class="row">
-            @foreach($teams as $team)
-              
+          <div class="row non-swiper">
+          @foreach($teams as $team)
             <div class="col">
               <a href="{{ route('our-team', $team->id) }}">
                 <img src="{{ asset($team->image) }}" alt="" />
                 <hr />
                 <div class="text-content">
                   <p class="title">{{ $team->{'title_' . app()->getLocale()} }}</p>
-                  <h6 class="description">
-                  {!! $team->{'content_' . app()->getLocale()} !!}
-                  </h6>
+                  <h6 class="description"> {!! $team->{'content_' . app()->getLocale()} !!}</h6>
                 </div>
               </a>
             </div>
             @endforeach
+          </div>
+
+           <div class="swiper swiper-container responsive-swiper">
+            <div class="swiper-wrapper grid-container">
+
+              @foreach($teams as $team)
+              <div class="swiper-slide">
+                <div class="col">
+                  <a href="{{ route('our-team', $team->id) }}">
+                    <img src="{{ asset($team->image) }}" alt="" />
+                    <hr />
+                    <div class="text-content">
+                      <p class="title">{{ $team->{'title_' . app()->getLocale()} }}</p>
+                      <h6 class="description"> {!! $team->{'content_' . app()->getLocale()} !!}</h6>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              @endforeach
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
           </div>
         </div>
       </div>

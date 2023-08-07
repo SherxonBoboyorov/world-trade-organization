@@ -6,6 +6,8 @@
 .our-team {
   margin-top: 80px !important;
   background: #b3ccda30;
+  padding-bottom: 40px !important;
+
   @include flex(center, center);
 
   .our-team-block {
@@ -14,6 +16,7 @@
     margin-right: 15px !important;
     max-width: 1100px;
     width: 100%;
+    overflow: hidden;
 
     .title-block {
       margin-left: 15px !important;
@@ -45,7 +48,7 @@
             background-color: $colorDanger;
             border: $colorDanger;
           }
-          
+
           img {
             height: 280px;
             width: 100%;
@@ -56,7 +59,7 @@
             width: 100%;
             height: fit-content;
             margin-top: 18px !important;
-            
+
             .title {
               color: $colorBlue;
               @include font(18px, 700);
@@ -89,21 +92,33 @@
 @media (max-width: 768px) {
   .our-team .our-team-block .row .col {
     width: 33.3% !important;
-    padding: 10px !important;
+    padding: 8px !important;
   }
 }
 
 @media (max-width: 576px) {
-  .our-team .our-team-block .row .col {
-    width: 50% !important;
-    padding: 8px !important;
+  .our-team .our-team-block {
+    .row {
+      &.non-swiper {
+        display: none;
+      }
 
-    img {
-      height: 220px !important;
+      // .col {
+      //   width: 50% !important;
+      //   padding: 8px !important;
+
+      //   img {
+      //     height: 220px !important;
+      //   }
+      // }
+
+      // hr {
+      //   top: 215px !important;
+      // }
     }
 
-    hr {
-      top: 215px !important;
+    .responsive-swiper {
+      display: block;
     }
   }
 }
@@ -111,9 +126,5 @@
 @media (max-width: 360px) {
   .our-team .our-team-block .row .col {
     width: 100% !important;
-
-    
-
-    
   }
 }

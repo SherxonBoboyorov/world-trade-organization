@@ -1,23 +1,21 @@
 const navbarToggler = document.querySelector(".navbar-toggler i");
-const navbarContent = document.querySelector(".navbar-content");
-const closeVideo = document.querySelector(".close-video i");
-const videoSection = document.querySelector(".video-section");
-const videoBoxImg = document.querySelector(".video-box img");
-const videoBoxVideo = document.querySelector("video");
+const navbarContent = document.querySelector(".link-content");
+
 const videoPlay = document.querySelector(".video-play");
 
 navbarToggler?.addEventListener("click", () => {
-  console.log(1);
   const open = navbarContent.className.includes("open");
   if (window.innerWidth <= 950) {
-    if (open) {
-      navbarContent.classList.remove("open");
-      navbarToggler.classList.remove("fa-xmark");
-      navbarToggler.classList.add("fa-bars");
-    } else {
+    if (!open) {
       navbarContent.classList.add("open");
-      navbarToggler.classList.add("fa-xmark");
-      navbarToggler.classList.remove("fa-bars");
+    }
+  }
+});
+
+navbarContent?.addEventListener("click", (e) => {
+  if (window.innerWidth <= 950) {
+    if (e.target.className.includes("open")) {
+      navbarContent.classList.remove("open");
     }
   }
 });
