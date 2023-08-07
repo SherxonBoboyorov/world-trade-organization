@@ -19,10 +19,6 @@
         <div class="news-post">
           <div class="row">
             <p class="title">{{ $article->{'title_' . app()->getLocale()} }}</p>
-            {{-- <p class="text">
-                {!! $article->{'sub_content_' . app()->getLocale()} !!}
-            </p> --}}
-
             <div class="img-content big-img"style="width: 100%; height: 400px; margin: 30px 0 !important">
               <img src="{{ asset($article->image) }}"  alt="" style="width: 100%; height: 100%"/>
             </div>

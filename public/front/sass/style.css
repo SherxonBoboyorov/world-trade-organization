@@ -20,6 +20,7 @@ body {
 }
 
 .title-block {
+  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
@@ -180,6 +181,7 @@ hr {
     align-items: center;
   }
   .header .header-content .link-content .navbar-content .navbar-nav .nav .nav-link {
+    width: -webkit-fit-content !important;
     width: -moz-fit-content !important;
     width: fit-content !important;
   }
@@ -355,6 +357,7 @@ hr {
     font-size: 10px !important;
     padding-top: 5px !important;
     transform: translateY(10px) !important;
+    height: -webkit-fit-content !important;
     height: -moz-fit-content !important;
     height: fit-content !important;
   }
@@ -369,7 +372,7 @@ hr {
 }
 @font-face {
   font-family: "Gotham Pro";
-  src: url("./../../fonts/gothampro.ttf");
+  src: url("./../../shrifts/gothampro.ttf");
 }
 .container-fluid {
   min-height: 100vh !important;
@@ -388,6 +391,7 @@ body {
 }
 
 .title-block {
+  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
@@ -432,6 +436,7 @@ hr {
   display: flex;
   justify-content: space-between;
   align-items: stretch;
+  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
 }
@@ -527,7 +532,7 @@ hr {
 
 @font-face {
   font-family: "Gotham Pro";
-  src: url("./../../fonts/gothampro.ttf");
+  src: url("./../../shrifts/gothampro.ttf");
 }
 .container-fluid {
   min-height: 100vh !important;
@@ -546,6 +551,7 @@ body {
 }
 
 .title-block {
+  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
@@ -634,9 +640,12 @@ hr {
 .our-team .our-team-block .row .col a img {
   height: 280px;
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .our-team .our-team-block .row .col a .text-content {
   width: 100%;
+  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   margin-top: 18px !important;
@@ -688,7 +697,7 @@ hr {
 }
 @font-face {
   font-family: "Gotham Pro";
-  src: url("./../../fonts/gothampro.ttf");
+  src: url("./../../shrifts/gothampro.ttf");
 }
 .container-fluid {
   min-height: 100vh !important;
@@ -707,6 +716,7 @@ body {
 }
 
 .title-block {
+  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
@@ -759,6 +769,7 @@ hr {
 }
 .activities .btns > a {
   cursor: pointer;
+  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   height: 40px;
@@ -798,9 +809,12 @@ hr {
 .activities .row .col > a img {
   height: 250px;
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .activities .row .col > a .text-content {
   width: 100%;
+  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   margin-top: 18px !important;
@@ -809,6 +823,7 @@ hr {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   font-size: 14px;
@@ -892,7 +907,7 @@ hr {
 }
 @font-face {
   font-family: "Gotham Pro";
-  src: url("./../../fonts/gothampro.ttf");
+  src: url("./../../shrifts/gothampro.ttf");
 }
 .container-fluid {
   min-height: 100vh !important;
@@ -911,6 +926,7 @@ body {
 }
 
 .title-block {
+  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
@@ -979,9 +995,12 @@ hr {
 .news .row .col > a img {
   height: 250px;
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .news .row .col > a .text-content {
   width: 100%;
+  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   margin-top: 18px !important;
@@ -991,6 +1010,7 @@ hr {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   font-size: 14px;
@@ -1062,7 +1082,7 @@ hr {
 }
 @font-face {
   font-family: "Gotham Pro";
-  src: url("./../../fonts/gothampro.ttf");
+  src: url("./../../shrifts/gothampro.ttf");
 }
 .container-fluid {
   min-height: 100vh !important;
@@ -1081,6 +1101,7 @@ body {
 }
 
 .title-block {
+  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
@@ -1149,6 +1170,7 @@ hr {
 .events .row .col > a .text-content {
   margin: 15px !important;
   width: 95%;
+  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   margin-top: 18px !important;
@@ -1159,6 +1181,7 @@ hr {
   align-items: center;
   font-size: 14px;
   font-weight: 500;
+  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   margin-bottom: 15px !important;
@@ -1218,7 +1241,7 @@ hr {
 }
 @font-face {
   font-family: "Gotham Pro";
-  src: url("./../../fonts/gothampro.ttf");
+  src: url("./../../shrifts/gothampro.ttf");
 }
 .container-fluid {
   min-height: 100vh !important;
@@ -1237,6 +1260,7 @@ body {
 }
 
 .title-block {
+  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
@@ -1345,6 +1369,7 @@ hr {
   color: #880019;
 }
 .footer .footer-content .row .col > div {
+  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   margin-top: 10px;
@@ -1410,7 +1435,7 @@ hr {
 }
 @font-face {
   font-family: "Gotham Pro";
-  src: url("./../../fonts/gothampro.ttf");
+  src: url("./../../shrifts/gothampro.ttf");
 }
 .container-fluid {
   min-height: 100vh !important;
@@ -1429,6 +1454,7 @@ body {
 }
 
 .title-block {
+  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
@@ -1517,7 +1543,7 @@ hr {
 }
 @font-face {
   font-family: "Gotham Pro";
-  src: url("./../../fonts/gothampro.ttf");
+  src: url("./../../shrifts/gothampro.ttf");
 }
 .container-fluid {
   min-height: 100vh !important;
@@ -1536,6 +1562,7 @@ body {
 }
 
 .title-block {
+  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
@@ -1648,7 +1675,7 @@ hr {
 }
 @font-face {
   font-family: "Gotham Pro";
-  src: url("./../../fonts/gothampro.ttf");
+  src: url("./../../shrifts/gothampro.ttf");
 }
 .container-fluid {
   min-height: 100vh !important;
@@ -1667,6 +1694,7 @@ body {
 }
 
 .title-block {
+  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
@@ -1826,7 +1854,7 @@ hr {
 }
 @font-face {
   font-family: "Gotham Pro";
-  src: url("./../../fonts/gothampro.ttf");
+  src: url("./../../shrifts/gothampro.ttf");
 }
 .container-fluid {
   min-height: 100vh !important;
@@ -1845,6 +1873,7 @@ body {
 }
 
 .title-block {
+  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
@@ -2026,7 +2055,7 @@ hr {
 }
 @font-face {
   font-family: "Gotham Pro";
-  src: url("./../../fonts/gothampro.ttf");
+  src: url("./../../shrifts/gothampro.ttf");
 }
 .container-fluid {
   min-height: 100vh !important;
@@ -2045,6 +2074,7 @@ body {
 }
 
 .title-block {
+  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
@@ -2264,7 +2294,7 @@ hr {
 }
 @font-face {
   font-family: "Gotham Pro";
-  src: url("./../../fonts/gothampro.ttf");
+  src: url("./../../shrifts/gothampro.ttf");
 }
 .container-fluid {
   min-height: 100vh !important;
@@ -2283,6 +2313,7 @@ body {
 }
 
 .title-block {
+  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
@@ -2419,7 +2450,7 @@ hr {
 }
 @font-face {
   font-family: "Gotham Pro";
-  src: url("./../../fonts/gothampro.ttf");
+  src: url("./../../shrifts/gothampro.ttf");
 }
 .container-fluid {
   min-height: 100vh !important;
@@ -2438,6 +2469,7 @@ body {
 }
 
 .title-block {
+  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
@@ -2506,7 +2538,7 @@ hr {
 
 @font-face {
   font-family: "Gotham Pro";
-  src: url("./../../fonts/gothampro.ttf");
+  src: url("./../../shrifts/gothampro.ttf");
 }
 .container-fluid {
   min-height: 100vh !important;
@@ -2525,6 +2557,7 @@ body {
 }
 
 .title-block {
+  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
