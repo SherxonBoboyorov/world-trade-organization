@@ -81,6 +81,9 @@
           .title {
             color: #123654;
             @include font(18px, 700);
+            max-height: 50px !important;
+            line-height: 25px;
+            overflow: hidden;
           }
 
           .description {
@@ -162,7 +165,6 @@
 
 @media (max-width: 480px) {
   .activities {
-    
     .row .col {
       width: 100% !important;
     }

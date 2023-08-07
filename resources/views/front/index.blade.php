@@ -18,7 +18,7 @@
                 <div class="description">{{ $slider->{'description_' . app()->getLocale()} }}</div>
               </div>
             </div>
-            <div class="text-block"></div>
+            <div class="blue-block"></div>
           </div>
           @endforeach
 

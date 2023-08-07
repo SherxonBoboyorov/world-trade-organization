@@ -28,7 +28,6 @@
         border-radius: 5px;
         overflow: hidden;
         height: 100%;
-        padding-bottom: 20px !important;
 
         img {
           height: 250px;
@@ -40,7 +39,7 @@
           width: 100%;
           height: fit-content;
           margin-top: 18px !important;
-          padding: 5px 15px !important;
+          padding: 5px 15px 10px 15px !important;
 
           .date-content {
             @include flex(space-between, center);
@@ -57,6 +56,9 @@
           .title {
             color: $colorBlue;
             @include font(18px, 700);
+            max-height: 50px !important;
+            line-height: 25px;
+            overflow: hidden;
           }
 
           .description {
@@ -64,7 +66,8 @@
             color: $colorDark;
             @include font(16px, 400);
             line-height: 24px !important;
-            max-height: 40px !important;
+            max-height: 50px !important;
+            overflow: hidden;
           }
         }
       }
