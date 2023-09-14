@@ -20,8 +20,8 @@
         <div class="events-post">
           <div class="video-section">
             <div class="video-box">
-              <div class="play video-play"><i class="fa-solid fa-play"></i></div>
-              <a data-fancybox href="{{ $event->frame }}">
+              {{-- <div class="play video-play"><i class="fa-solid fa-play"></i></div> --}}
+              <a data-fancybox>
                 <img 
                 id="videoImg"
                   class="card-img-top img-fluid"
