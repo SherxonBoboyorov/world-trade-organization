@@ -71,9 +71,6 @@
                      </li>
                     {{-- end  --}}
                     
-
-
-
                      {{-- start  --}}
                      <li class="nav-item">
                         <a href="{{ route('activitycategory.index') }}" class="nav-link">

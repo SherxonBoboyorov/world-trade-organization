@@ -25,7 +25,6 @@
 
             <div class="row">
               @foreach($activities as $activity)
-                
               <div class="col">
                 <a href="{{ route('activitiy', $activity->{'slug_' . app()->getLocale()}) }}">
                   <img src="{{ asset($activity->image) }}" alt="" />
