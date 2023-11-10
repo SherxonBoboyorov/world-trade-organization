@@ -35,8 +35,15 @@
               </a>
             </div>
           </div>
+
+          
+
           <div class="row">
             <p class="title">{{ $activitiy->{'title_' . app()->getLocale()} }}</p>
+
+            <div class="col col-1">
+              <img src="{{ asset($activitiy->image) }}" alt="" />
+            </div><br>
             <p class="text">
               {!! $activitiy->{'content_' . app()->getLocale()} !!}
             </p>

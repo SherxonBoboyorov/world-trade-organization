@@ -25,22 +25,22 @@
               <div class="link-wrapper">
                <div class="navbar-nav">
                 <div class="nav">
-                  <a class="nav-link" href="{{ route('about') }}">@lang('front.about')</a>
+                  <a class="nav-link {{ (\Request::route()->getName() == 'about') ? 'active' : '' }}" href="{{ route('about') }}">@lang('front.about')</a>
                 </div>
                 <div class="nav">
-                  <a class="nav-link" href="{{ route('our-teams') }}">@lang('front.our_team')</a>
+                  <a class="nav-link {{ (\Request::route()->getName() == 'our-teams') ? 'active' : '' }}" href="{{ route('our-teams') }}">@lang('front.our_team')</a>
                 </div>
                 <div class="nav">
-                  <a class="nav-link" href="{{ route('activities', ['id' => 1]) }}">@lang('front.activities')</a>
+                  <a class="nav-link {{ (\Request::route()->getName() == 'activities') ? 'active' : '' }}" href="{{ route('activities', ['id' => 1]) }}">@lang('front.activities')</a>
                 </div>
                 <div class="nav">
-                  <a class="nav-link" href="{{ route('articles') }}">@lang('front.news')</a>
+                  <a class="nav-link {{ (\Request::route()->getName() == 'articles') ? 'active' : '' }}" href="{{ route('articles') }}">@lang('front.news')</a>
                 </div>
                 <div class="nav">
-                  <a class="nav-link" href="{{ route('events') }}">@lang('front.events')</a>
+                  <a class="nav-link {{ (\Request::route()->getName() == 'events') ? '' : 'active' }}" href="{{ route('events') }}">@lang('front.events')</a>
                 </div>
                 <div class="nav">
-                  <a class="nav-link" href="{{ route('contact') }}">@lang('front.contacts')</a>
+                  <a class="nav-link {{ (\Request::route()->getName() == 'contact') ? 'active' : '' }}" href="{{ route('contact') }}">@lang('front.contacts')</a>
                 </div>
               </div>
 
@@ -80,11 +80,7 @@
       </div>
 
       <!-- Header end -->
-
-
       @yield('content')
-
-
       <!-- Main Block end -->
 
       <div class="footer">
@@ -135,6 +131,9 @@
             <div class="col col-2">
               <div>
                 <div class="link-logos">
+                    <div class="sm-logo">
+                    <a href="{{ $options->where('key', 'telegram')->first()->value }}"><i class="fa-brands fa-telegram"></i></a>
+                    </div>
                   <div class="sm-logo">
                     <a href="{{ $options->where('key', 'instagram')->first()->value }}"><i class="fa-brands fa-instagram"></i></a>
                   </div>
@@ -145,21 +144,24 @@
                     <a href="{{ $options->where('key', 'youtube')->first()->value }}"><i class="fa-brands fa-youtube"></i></a>
                   </div>
                 </div>
-                <p>
+
+                {{-- <p>
+
                   <a href="#"> «WTO» @lang('front.all_rights_reserved') </a>
                 </p>
                 <p>
                   <a href="https://sos.uz">
                     © Copyright {{ date("Y") }} - Web developed by SOS Group
                   </a>
-                </p>
+                  
+                </p> --}}
+
               </div>
             </div>
 
           </div>
         </div>
       </div>
-
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="{{ asset('front/js/jquery-3.6.3.min.js') }}"></script>
     <script src="{{ asset('front/js/materialize.min.js') }}"></script>
@@ -169,4 +171,3 @@
 
   </body>
 </html>
-        

@@ -14,15 +14,17 @@
       </div>
       <!-- Background Image end -->
 
-      <!-- What we do start -->
+           <!-- What we do start -->
       <div class="container">
         <div class="what-we-do">
           @foreach($pages as $page)
+
           <div class="row">
             <div class="col col-1">
               <p class="text" style="margin-top: 0px !important">
                 {!! $page->{'sub_content_' . app()->getLocale()} !!}
               </p>
+             
             </div>
             <div class="col col-2">
               <img src="{{ asset($page->image) }}" alt="" />
@@ -34,8 +36,10 @@
                 {!! $page->{'content_' . app()->getLocale()} !!}
               </p>
             </div>
-          </div>
+          </div><br>
+        
           @endforeach
+          
         </div>
       </div>
       <!-- What we do end -->

@@ -36,6 +36,7 @@
                                     <option value="fax" @if($option->key == 'fax') selected @endif>Fax</option>
                                     <option value="email" @if($option->key == 'email') selected @endif>E-mail</option>
                                     <option value="map" @if($option->key == 'map') selected @endif>Google or Yandex MAP</option>
+                                    <option value="telegram" @if($option->key == 'telegram') selected @endif>Telegram</option>
                                     <option value="instagram" @if($option->key == 'instagram') selected @endif>Instagram</option>
                                     <option value="facebook" @if($option->key == 'facebook') selected @endif>Facebook</option>
                                     <option value="youtube" @if($option->key == 'youtube') selected @endif>Youtube</option>

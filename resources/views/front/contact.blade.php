@@ -23,9 +23,8 @@
           <div class="row">
             <div class="col col-1">
               <p>
-                <a href="tel:{{ $options->where('key', 'phone')->first()->value }}">
-                  <span>@lang('front.phone_number'):</span> 
-                  {{ $options->where('key', 'phone')->first()->value }}
+                <a href="tel:{{ $options->where('key', 'phone')->first()->value }}"
+                  ><span>@lang('front.phone_number'):</span> {{ $options->where('key', 'phone')->first()->value }}
                 </a>
               </p>
               <p>

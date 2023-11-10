@@ -23,7 +23,7 @@ class IndexController extends Controller
         $articles = Article::orderBy('created_at', 'DESC')->paginate(3);
         $events = Event::orderBy('created_at', 'DESC')->paginate(3);
         $avtivitycategories = ActivityCategory::all();
-        $activities = Activity::orderBy('created_at', 'DESC')->get();
+        $activities = Activity::orderBy('created_at', 'DESC')->paginate(3);
 
         return view('front.index', compact(
             'sliders',

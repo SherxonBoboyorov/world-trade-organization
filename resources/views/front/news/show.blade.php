@@ -23,8 +23,9 @@
               <img src="{{ asset($article->image) }}"  alt="" style="width: 100%; height: 100%"/>
             </div>
 
-              <p class="text">
+            <p class="text">
                 {!! $article->{'content_' . app()->getLocale()} !!}
+    
               </p>
           </div>
          

@@ -46,7 +46,7 @@ Route::group(
     [
         'prefix' => LaravelLocalization::setLocale(),
         'middleware' => [ 'localeSessionRedirect', 'localizationRedirect', 'localeViewPath' ]
-    ], function(){ 
+    ], function(){
         Route::get('/', [IndexController::class, 'homepage'])->name('/');
         Route::get('about', [AboutController::class, 'about'])->name('about');
         Route::get('our-teams', [TeamsController::class, 'list'])->name('our-teams');
@@ -61,6 +61,7 @@ Route::group(
         Route::post('save_callback', [ContactController::class, 'saveCallback'])->name('saveCallback');
 
     });
+
 
 
 

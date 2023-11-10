@@ -35,6 +35,7 @@
                                   <option value="fax">Fax</option>
                                   <option value="email">E-mail</option>
                                   <option value="map">Google or Yandex MAP</option>
+                                  <option value="telegram">Telegram</option>
                                   <option value="instagram">Instagram</option>
                                   <option value="facebook">Facebook</option>
                                   <option value="youtube">Youtube</option>
